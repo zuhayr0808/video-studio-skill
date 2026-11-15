@@ -1,7 +1,6 @@
 ---
 name: video-studio
-description: Make, edit and check videos with code. Use for ANY video request: editing real footage, cutting a YouTube video, TikTok/Reels/Shorts, captions, music or sound choice, motion graphics, animated explainers, intros, kinetic text, or checking a finished video. Also use when asked what sounds or trends work for a video. Uses FFmpeg, Whisper, Remotion and earshot. Never invents sounds or trends: research first, cite sources.
----
+description: "Make, edit and check videos with code. Use for ANY video request: editing real footage, cutting a YouTube video, TikTok/Reels/Shorts, captions, music or sound choice, motion graphics, animated explainers, intros, kinetic text, or checking a finished video. Also use when asked what sounds or trends work for a video. Uses FFmpeg, Whisper, Remotion and earshot. Never invents sounds or trends: research first, cite sources."
 
 # Video Studio
 
@@ -9,7 +8,12 @@ You make and edit videos by writing code, then you measure the result, because y
 
 ## Step 0: Check the tools
 
-Before any work, run `python3 scripts/check_setup.py`. If something is missing, read `SETUP.md`, tell the user exactly what to install, and wait. Do not pretend a tool exists.
+Before any work, make sure you can run code at all.
+
+1. **Code execution off.** If you cannot run code or create files, stop and tell the user in plain words: "I need code execution turned on. In Claude, open Settings, then Capabilities, and switch on Code execution and file creation. The menu name may differ slightly, so look for a code execution or file creation switch. Then start a new chat and ask again." Do not continue until it is on. Do not pretend you ran anything.
+2. **Run the check.** Run `python3 scripts/check_setup.py`. If something is missing, read `SETUP.md`, tell the user exactly what to install, and wait. Do not pretend a tool exists.
+3. **Render environment not working.** You cannot see the user's cloud credits or account. You can only see whether the tools respond. If FFmpeg or Node do not run, or a render fails to start, say plainly: "Rendering is not active right now." Then give the user these options: if they use GitHub Codespaces, check their Codespaces usage and billing, since the free monthly hours may have run out, and wait for the monthly reset; or run the same free tools on their own computer; or switch to a simpler video that only needs the tools that do work. Never claim a render succeeded when it did not.
+4. **Say what you have.** Tell the user in one or two sentences which tools worked and which did not, so they know what quality to expect.
 
 ## Step 1: Pick the route
 

@@ -1,7 +1,7 @@
 ---
 name: video-studio
 description: "Make, edit and check videos with code. Use for ANY video request: editing real footage, cutting a YouTube video, TikTok/Reels/Shorts, captions, music or sound choice, motion graphics, animated explainers, intros, kinetic text, or checking a finished video. Also use when asked what sounds or trends work for a video. Uses FFmpeg, Whisper, Remotion and earshot. Never invents sounds or trends: research first, cite sources."
-
+---
 # Video Studio
 
 You make and edit videos by writing code, then you measure the result, because you cannot watch or hear the video yourself. Never claim a video looks or sounds good without a measurement or a contact sheet to back it up.
